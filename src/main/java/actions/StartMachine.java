@@ -2,13 +2,13 @@ package actions;
 
 import java.util.Scanner;
 
-import static actions.Filling.addIngredients;
-import static actions.Remaining.printCapacity;
-import static actions.SelectCoffee.selectCoffeeType;
-import static actions.Withdrawal.withdrawalMoney;
+import static actions.CoffeeMachineUtility.Withdrawal.withdrawalMoney;
+import static actions.CoffeeMachineUtility.*;
+
 
 public class StartMachine {
     static String action = "";
+
     public static void startCoffeeMachine(Scanner scanner) {
         while (!action.equals("exit")) {
             System.out.println("Write action (buy, fill, take, remaining, exit): ");
